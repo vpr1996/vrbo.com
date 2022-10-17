@@ -215,8 +215,10 @@ public class BaseClass {
 		r.keyPress(KeyEvent.VK_V);
 		r.keyRelease(KeyEvent.VK_CONTROL);
 		r.keyRelease(KeyEvent.VK_V);
+		
 	}
 
+	
 	// 21
 	public static void acceptt() {
 		Alert a = driver.switchTo().alert();
@@ -688,6 +690,29 @@ public class BaseClass {
         		 f.until(ExpectedConditions.alertIsPresent());
         		
         	 }
+        	 
+        	// 20
+        		public static void paste1() throws Throwable {
+
+        			Robot r = new Robot();
+        			r.keyPress(KeyEvent.VK_CONTROL);
+        			r.keyPress(KeyEvent.VK_V);
+        			r.keyRelease(KeyEvent.VK_CONTROL);
+        			r.keyRelease(KeyEvent.VK_V);
+        			
+        		}
+
+        	 // 71 
+        	 
+        	 public static void minimizethescreen() throws AWTException {
+				
+        		 Robot r = new Robot();
+     			r.keyPress(KeyEvent.VK_CONTROL);
+     			r.keyPress(KeyEvent.VK_MINUS);
+     			r.keyRelease(KeyEvent.VK_CONTROL);
+     			r.keyRelease(KeyEvent.VK_MINUS);
+
+			}
         	 
         	
         	 

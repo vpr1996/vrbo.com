@@ -15,10 +15,9 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src\\test\\resources\\",
 glue= {"org.stepdefinitionclass"},
-dryRun=false,plugin= {"html:target\\Reports","junit:target\\Reports\\vrbo.xml","json:target\\Reports\\vrbo.json","rerun:target\\Reports\\vrbo.txt"},
-tags= {"@randy"})           
+dryRun=false,plugin= {"html:target\\Reports","junit:target\\Reports\\vrbo.xml","json:target\\Reports\\vrbo.json","rerun:target\\Reports\\vrbo.txt"})           
 
-public class RunnerClas {
+ public class RunnerClas {
 	
   
 	@AfterClass
