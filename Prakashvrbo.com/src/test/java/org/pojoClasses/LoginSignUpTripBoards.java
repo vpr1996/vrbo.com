@@ -1,10 +1,10 @@
 package org.pojoClasses;
 
-import org.framework.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.utilities.BaseClass;
 
 public class LoginSignUpTripBoards  extends BaseClass {
 
@@ -14,6 +14,8 @@ public class LoginSignUpTripBoards  extends BaseClass {
 	}
 	
 	
+	@FindBy(className="site-header-logo__img Header-BG img-responsive")
+	private WebElement vrbohomelogo;
 	
 	@FindBy(xpath="(//span[@class='site-header-nav__icon-label'])[2]")
 	private WebElement login;
@@ -59,6 +61,10 @@ public class LoginSignUpTripBoards  extends BaseClass {
 	private WebElement ownersigninbtn;
 
 
+	public WebElement getVrbohomelogo() {
+		return vrbohomelogo;
+	}
+	
 	public WebElement getLogin() {
 		return login;
 	}
